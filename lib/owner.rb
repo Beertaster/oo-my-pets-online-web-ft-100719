@@ -8,7 +8,7 @@ class Owner
   def initialize(species)
     @@all << self
     @species = species
-    @pets = {:cat => [], :dog => []}
+    @pets = {:cat => [], :dog => []}  #this might not work, and instead put a variable to the owner?
   end
   
   def buy_dog(dog_name)
