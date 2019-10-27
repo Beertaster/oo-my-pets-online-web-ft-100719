@@ -5,7 +5,10 @@ class Owner
   
   @@all = []
   
-  def initialize()
+  def initialize(species)
+    @@all << self
+    
+  end
   
   
   
