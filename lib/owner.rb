@@ -28,7 +28,10 @@ class Owner
     end
   end
   
-  
+  def say_species
+    return "I am a #{@species}."
+  end
+
   
   def walk_dogs
     @pets.collect do |species, instance|
