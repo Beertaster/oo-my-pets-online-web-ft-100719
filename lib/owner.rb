@@ -19,7 +19,14 @@ class Owner
     @pets[:cats] << Cat.new(cat_name)
   end
   
-  
+  def sell_pets
+    @pets.collect do |species, instances|
+      instances.each do |pet|
+        pet.mood = "nervous"
+      end
+      instances.clear
+    end
+  end
   
   
   def walk_dogs
